@@ -1,4 +1,5 @@
-# 🌊 AquaPing - Underwater Altimeter Telemetry & Visualization 
+# 🌊 AquaPing
+            Underwater Altimeter Telemetry & Visualization 
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python Version">
