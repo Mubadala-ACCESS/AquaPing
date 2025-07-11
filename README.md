@@ -19,9 +19,9 @@
 
 ## ✨ Key Features
 
-| 🎯 Depth Accuracy | 📡 Acoustic Link | 🔁 Retry Handling | 🖼️ Real-time Plot | ⏱️ Speed Tracking | 🧩 Modular Design |
-|------------------|------------------|-------------------|------------------|-------------------|------------------|
-| Ping1D sonar for precise altimetry | Delphis modem for data uplink | LED-coded error retry & auto reconnect | PyQt5 live plot with zoom | Instantaneous & average speed (m/min) | 3D-printed Support, open-source software |
+| 🎯 Depth Accuracy | 📡 Acoustic Link | 🔁 Retry Handling | 🖼️ Real-time Plot | ⏱️ Speed Tracking |
+|------------------|------------------|------------------|-------------------|------------------|
+| Ping1D sonar for precise altimetry | Delphis modem for data uplink | LED-coded error retry & auto reconnect | PyQt5 live plot with zoom | Instantaneous & average speed (m/min) |
 
 ---
 
