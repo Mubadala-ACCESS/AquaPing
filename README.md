@@ -1,5 +1,4 @@
-# 🌊 AquaPing
-            Underwater Altimeter Telemetry & Visualization 
+# AquaPing - Underwater Altimeter Telemetry & Visualization 
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python Version">
@@ -102,8 +101,6 @@ More in [`docs/photos`](docs/photos)
 
 ---
 
-```
-
 ## ✨ Key Features
 | Feature | Description |
 |---------|-------------|
@@ -147,21 +144,17 @@ pip3 install brping pyserial
 # Enable UART
 sudo raspi-config nonint do_serial 0
 sudo reboot
+
+# Start Program
+python3 echo_altimeter.py
 ```
 
-### Receiver (Surface Unit)
+
+## 🔁 Auto-start on Boot
+
+ Save the following to /etc/systemd/system/aquaping.service:
+
 ```bash
-pip3 install pyserial matplotlib  # For basic plotting
-```
-
-
-🔁 Auto-start on Boot
-Use a systemd service. Save the following to /etc/systemd/system/aquaping.service:
-
-ini
-Copy
-Edit
-[Unit]
 Description=AquaPing Altimeter Service
 After=network.target
 
@@ -174,32 +167,33 @@ WorkingDirectory=/home/pi/AquaPing/transmitter
 
 [Install]
 WantedBy=multi-user.target
+```
+```bash
 Then run:
-
-bash
-Copy
-Edit
 sudo systemctl daemon-reload
 sudo systemctl enable aquaping.service
 sudo systemctl start aquaping.service
-📥 Receiver (Boat)
-Connect Delphis modem via USB and run:
+```
 
-bash
-Copy
-Edit
-cd receiver
-python3 receive_data.py
+
+
+
+### Receiver (Surface Unit) Connect Delphis modem via USB and run:
+```bash
+# Install dependencies
+pip3 install pyserial matplotlib  # For basic plotting
+pip install pyserial pyqt5 matplotlib numpy
+
+# Start Program
+python3 receive_data_V1/V2.py
+
 Expected output:
 
-yaml
-Copy
-Edit
 Received: $U001082,92
 Depth: 0.82 m | Confidence: 92%
 
+```
 
----
 
 
 ## 📌 Quick Start
@@ -217,23 +211,8 @@ python3 receive_data_v1.py/receive_data_v2.py
 4. Start receiver software on boat computer
 5. Monitor depth readings in real-time
 
-Sample Output:
-```
-[2023-11-15 14:30:45] Depth: 12.34m | Confidence: 95%
-
-
-## 📊 Data Format
-Transmitted packets use compact binary format:
-```
-Header (2B) | Depth (4B) | Confidence (1B) | Checksum (1B)
 ```
 
-## 🖨️ 3D Printing Guide
-| Part | Material | Print Settings |
-|------|----------|----------------|
-| Main Housing | PETG | 0.2mm layer, 4 walls |
-| Sonar Mount | ASA | 100% infill |
-| Modem Bracket | PLA+ | Supports enabled |
 
 ## ⚠️ Troubleshooting
 | Issue | Solution |
