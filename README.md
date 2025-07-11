@@ -49,7 +49,7 @@ AquaPing/
 │   │   └── deployment.jpg
 │   ├── datasheets/           # Technical specifications
 │   │   ├── ping1d.pdf
-│   │   └── delphis_m25.pdf
+│   │   └── delphis.pdf
 │   └── ui_screenshot.png     # GUI preview
 │
 ├── LICENSE                   # MIT License
