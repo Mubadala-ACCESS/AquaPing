@@ -9,7 +9,7 @@
 - 📡 Real-time acoustic transmission using Delphis modems
 - 📏 Depth measurements from Ping1D (Blue Robotics)
 - 🔁 Automatic retry and error handling
-- ⚙️ Compact 3D-printed waterproof housing
+- ⚙️ Compact 3D-printed mounts
 - 🛥️ Receiver software for boats or surface stations
 
 ---
