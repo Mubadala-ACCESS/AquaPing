@@ -249,7 +249,7 @@ Header (2B) | Depth (4B) | Confidence (1B) | Checksum (1B)
 
 
 ## 📜 License
-MIT License - See [LICENSE](LICENSE) for details.
+MIT License - See [LICENSE](License.txt) for details.
 
 ## 👨‍💻  Maintainer
 **Muhammed Nabeel**  
