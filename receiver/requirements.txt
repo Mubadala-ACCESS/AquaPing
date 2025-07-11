@@ -1,0 +1,25 @@
+=== Requirements for Altimeter Plotter Program ===
+
+1. Python 3.6 or later
+
+2. Required Python packages (install via pip):
+pip install pyserial pyqt5 matplotlib numpy
+
+=== Windows Specific ===
+- COM port drivers for your device
+- No special PyQt5 requirements
+
+=== Linux Specific ===
+# For Ubuntu/Debian:
+sudo apt-get install python3-pyqt5 python3-serial python3-matplotlib python3-numpy
+
+# Set serial port permissions:
+sudo usermod -a -G dialout $USER
+sudo chmod a+rw /dev/ttyUSB*
+
+=== How to Run ===
+python altimeter_plotter.py
+
+=== Notes ===
+- Program needs graphical environment
+- Device should output data in format: #U0<distance_mm>,<confidence>
