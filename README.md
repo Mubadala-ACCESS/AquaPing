@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python Version">
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+  <img src="https://img.shields.io/badge/License-Copyleft-green" alt="License">
   <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status">
 </p>
 
@@ -52,7 +52,7 @@ AquaPing/
 │   │   └── delphis.pdf
 │   └── ui_screenshot.png     # GUI preview
 │
-├── LICENSE                   # MIT License
+├── LICENSE              # Copyleft License
 └── README.md                 # This documentation
 
 ```
@@ -229,7 +229,7 @@ python3 receive_data_v1.py/receive_data_v2.py
 
 
 ## 📜 License
-MIT License - See [LICENSE](License.txt) for details.
+Copyleft License - See [LICENSE](License.txt) for details.
 
 ## 👨‍💻  Maintainer
 **Muhammed Nabeel**  
